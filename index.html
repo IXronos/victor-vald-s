@@ -28,70 +28,232 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="numbertext">1/3</div>
-            <img src="imagenes/completo incompleto.jfif" class="d-block w-100" alt="imagen de hot dog">
-            <div class="text">Caption Text</div>
-        </div>
-          <div class="carousel-item">
-            <div class="numbertext">2 / 3</div>
-            <img src="imagenes/hamburguesa.jfif" class="d-block w-100" alt="imagen de hamburguesa">
-            <div class="text">Caption Two</div>
-        </div>
-          <div class="carousel-item">
-            <div class="numbertext">3 / 3</div>
-            <img src="imagenes/mini pizza.jfif" class="d-block w-100" alt="imagen de mini pizza">
-            <div class="text">Caption Three</div>
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logo.jpg" alt="Logo" height="40" class="d-inline-block align-top me-2">
+          El Aniquilador del Hambre
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#manú" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                <li><a class="dropdown-item" href="#">Sandwiches</a></li>
+                <li><a class="dropdown-item" href="#">Platos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Bebestibles</a></li>
+                <li><a class="dropdown-item" href="#">Postres</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#Historia">Nuestra Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Sucursales">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  
+
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagenes/completo incompleto.jfif" class="d-block w-100 img-carousel" alt="imagen de hot dog">
+        </div>
+        <div class="carousel-item">
+            <img src="imagenes/hamburguesa.jfif" class="d-block w-100 img-carousel" alt="imagen de hamburguesa">
+        </div>
+        <div class="carousel-item">
+            <img src="imagenes/mini pizza.jfif" class="d-block w-100 img-carousel" alt="imagen de mini pizza">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+
+  
+    </button>
+  </div>
+
+  <main>
+    <section id="menú">
+        <h2> Nuestro Menú</h2>
+
+        <article>
+          <h3>Sandwiches</h3>
+          <div>
+            <h4>Sandwich clasico</h4>
+            <p>ingredientes:</p>
+            <p>precio: $</p>
+          </div>
+          <div>
+            <h4>Sandwich italiano</h4>
+            <p>ingredientes:</p>
+            <p>precio: $</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>platos</h3>
+          <div>
+            <h4>Salmón</h4>
+            <p>ingredientes:</p>
+            <p>precio: $</p>
+          </div>
+          <div>
+            <h4>Bifé a lo pobre</h4>
+            <p>ingredientes:</p>
+            <p>precio: $</p>
+          </div>
+        </article>
+          
+        <article>
+          <h3>Bebestibles</h3>
+          <div>
+            <h4>Jugo Natural</h4>
+            <p>Sabores:</p>
+            <P>precio: $</P>
+          </div>
+          <div>
+            <h4>Bebidas</h4>
+            <p>Sabores:</p>
+            <p>Precio: $</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>Postres</h3>
+          <div>
+            <h4>Helado</h4>
+            <p>Sabores:</p>
+            <p>Precio: $</p>
+          </div>
+          <div>
+            <h4>tiramisú</h4>
+            <p>ingredientes:</p>
+            <p>precio: $</p>
+          </div>
+        </article>
+    </section>
+
+    <section id="Historia">
+      <h2>Nuestra Historia</h2>
+      <p>En el corazón de la ciudad, en el año 1975, nació un modesto local de sandwiches que prometía acabar con el hambre de sus clientes de la manera más deliciosa posible. Su fundador, Don Ramón "El Toro" Mendoza, un cocinero autodidacta con manos gigantes y un apetito aún mayor, decidió bautizar su negocio con un nombre que no dejara dudas: "El Aniquilador del Hambre".
+
+        La leyenda cuenta que Don Ramón creó su primer sandwich, "El Destructor", después de ver a un cliente desmayarse de hambre frente a su puesto callejero. Era tan grande que necesitaba dos manos para sostenerlo y estaba relleno de carne, jamón, queso derretido, palta, tomate, huevo frito y una salsa secreta que, según rumores, contenía "el espíritu de los antepasados cocineros".
+        
+        Con los años, el local pasó de ser un pequeño puesto a convertirse en un ícono de la ciudad, conocido por sus porciones generosas, sus ingredientes frescos y su lema: "Si terminas tu plato, eres un héroe. Si no puedes, eres humano".
+        </p>
+      <p>50 Años de Batallas Contra el Hambre</p>
+        
+      <p>1975-1985: Sobrevivió a tres crisis económicas gracias a su política de "Nadie se va con hambre", donde ofrecía platos económicos a estudiantes y trabajadores.</p>  
+        
+      <p>1986: Introdujo "El Apocalipsis", un sandwich de cinco pisos que solo 12 personas han logrado terminar en una sola sentada.</p>   
+
+      <p>1999: Abrió su segunda sucursal después de que una turista japonesa viralizara su "Completo Aniquilador" en un blog de viajes.</p>   
+
+      <p>2020: Durante la pandemia, repartió más de 1,000 cajas de comida diarias a hospitales y familias necesitadas, reforzando su leyenda.</p>  
+        
+      <p>Hoy, dirigido por la nieta de Don Ramón, Valentina, el local mantiene su esencia: comida honesta, porciones épicas y un desafío constante contra el hambre. Sus paredes están llenas de fotos de clientes que intentaron (y fallaron) contra el "Reto Aniquilador", y su historia sigue escribiéndose... un bocado a la vez.</p>  
+        
+      <p>"No vendemos comida. Vendemos victorias." <br>— Don Ramón (1975).</p> 
+
+      <article class="Testimonio">
+        <h3>Testimonio de Clientes</h3>
+        <div>
+          <h4>Juan Pérez</h4>
+          <p>"Siempre vengo aquí con mi familia, la atención es excelente."</p>
+        </div>
+        <div>
+          <h4>Rosa Salgado</h4>
+          <p>"Tan esquisito como el primer día que me trajo mi esposo"</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="Sucursales">
+      <h2>nuestras Sucursales</h2>
+
+      <article>
+        <h3>Sucursal Centro</h3>
+        <p>Dirección: avenida siempre viva 742, Centro</p>
+        <p>Teléfono: +569 5555 5555</p>
+        <p>Email: centro.contacto@aniquiladordelhambre.cl</p>
+        <p>Horarios: Lunes a Jueves 09:00 - 22:00 <br>Viernes a Sabado 09:00 - 00:00</p>
+      </article>
+
+      <article>
+        <h3>Sucursal Isla Teja</h3>
+        <p>Dirección: avenida falsa 123, Isla Teja</p>
+        <p>Teléfono: +569 2222 2222</p>
+        <p>Email: isla.contacto@aniquiladordelhambre.cl</p>
+        <p>Horarios: Lunes a Jueves 09:00 - 22:00 <br>Viernes a Sabado 09:00 - 00:00</p>
+      </article>
+    </section>
+
+    <section id="Contacto">
+      <h2>Formulario de Contacto</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        
+        <div>
+          <label>Tipo de mensaje:</label>
+          <input type="radio" id="consulta" name="tipo" value="consulta" required>
+          <label for="consulta">Consulta</label>
+          <input type="radio" id="reclamo" name="tipo" value="reclamo">
+          <label for="reclamo">Reclamo</label>
+        </div>
+
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <a class="btn btn-primary" href="#top" role="button">volver arriba</a>
+  <footer>
+    <h3>Contacto</h3>
+    <p>Sucursal centro:    +56 9 5555 5555</p>
+    <p>Sucursal Isla Teja: +56 9 2222 2222</p>
+
+    <h3>Redes Sociales</h3>
+    <p>Facebook: @aniquiladordelhambre</p>
+    <p>Instragram: @aniquiladordelhambre</p>
+
+    <p>&copy; 2025 El Aniquilador del Hambre - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
