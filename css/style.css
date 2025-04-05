@@ -3,10 +3,12 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: danger;
+    overflow: visible;
+    background-color: #dc3545;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1000;
   }
   
   li {
@@ -25,6 +27,16 @@ ul {
   .active {
     background-color: #0f0f0f;
   }
+
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .nav-link:active,
+  .nav-link:focus{
+    background-color: #dc3545 !important;
+    color: white !important;
+    outline: none !important;
+  }
+
 
 .carousel {
   max-width: 800px; 
@@ -56,3 +68,17 @@ ul {
     color: white;
   }
 
+
+/* boton volver arriba*/
+.botn {
+  position: fixed;
+  border: 2px solid #0f0f0f;
+  padding: 15px 32px;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #dc3545;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) ;
+}
