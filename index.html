@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    
+    
     <style>
     .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/asd.jpeg");
@@ -21,6 +23,43 @@
 </head>
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logo.jpg" alt="Logo" height="40" class="d-inline-block align-top me-2">
+            El Aniquilador del Hambre
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown">
+                        Menú
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                        <li><a class="dropdown-item" href="#Sandwiches">Sandwiches</a></li>
+                        <li><a class="dropdown-item" href="#Platos">Platos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#Bebestibles">Bebestibles</a></li>
+                        <li><a class="dropdown-item" href="#Postres">Postres</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Historia">Nuestra Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Sucursales">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
     <div class="hero-image">
         <div class="hero-text">
           <h1>El Aniquilador Del Hambre</h1>
@@ -28,152 +67,331 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="imagenes/logo.jpg" alt="Logo" height="40" class="d-inline-block align-top me-2">
-          El Aniquilador del Hambre
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#manu" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menú
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
-                <li><a class="dropdown-item" href="#Sandwiches">Sandwiches</a></li>
-                <li><a class="dropdown-item" href="#Platos">Platos</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#Bebestibles">Bebestibles</a></li>
-                <li><a class="dropdown-item" href="#Postres">Postres</a></li>
-              </ul>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#Historia">Nuestra Historia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Sucursales">Sucursales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contacto">Contacto</a>
-            </li>
-          </ul>
+
+    <main class="container my-5">
+      <section id="menú">
+          <h2 class="text-center mb-5">Nuestro Menú</h2>
+
+          <article id="Sandwiches" class="mb-5">
+              <h3 class="text-danger mb-4">Sandwiches</h3>
+              <div id="sandwichCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Sandwich Clásico</h4>
+                                      <p>Pan fresco, jamón, queso, lechuga, tomate y mayonesa</p>
+                                      <p class="fw-bold">$4.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Sandwich Italiano</h4>
+                                      <p>Pan ciabatta, mortadela, pepperoni, queso provolone y alioli</p>
+                                      <p class="fw-bold">$5.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>El Destructor</h4>
+                                      <p>Triple carne, triple queso, tocino, huevo frito y salsa secreta</p>
+                                      <p class="fw-bold">$7.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Vegetariano Supremo</h4>
+                                      <p>Pan integral, palta, queso de cabra, tomate seco y rúcula</p>
+                                      <p class="fw-bold">$5.490</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Pulled Pork</h4>
+                                      <p>Cerdo desmenuzado, salsa BBQ y cole slaw en pan brioche</p>
+                                      <p class="fw-bold">$6.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Churrasco Italiano</h4>
+                                      <p>Lomito, palta, mayonesa y tomate en marraqueta</p>
+                                      <p class="fw-bold">$5.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#sandwichCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#sandwichCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button>
+              </div>
+          </article>
+
+          <article id="Platos" class="mb-5">
+              <h3 class="text-danger mb-4">Platos Principales</h3>
+              <div id="platosCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Salmón Glaseado</h4>
+                                      <p>Salmón fresco con glaseado de miel y mostaza, acompañado de puré</p>
+                                      <p class="fw-bold">$12.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Bifé a lo Pobre</h4>
+                                      <p>Bifé de lomo vetado, huevos fritos, cebolla caramelizada y papas fritas</p>
+                                      <p class="fw-bold">$10.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Lasagna Casera</h4>
+                                      <p>Capas de pasta, carne molida, salsa bolognesa y mucho queso gratinado</p>
+                                      <p class="fw-bold">$8.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Pasta Alfredo</h4>
+                                      <p>Fettuccine con salsa cremosa de parmesano y champiñones</p>
+                                      <p class="fw-bold">$9.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Costillar BBQ</h4>
+                                      <p>Costillar de cerdo cocido lentamente con salsa BBQ casera</p>
+                                      <p class="fw-bold">$13.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Risotto de Hongos</h4>
+                                      <p>Arroz arbóreo cremoso con mezcla de hongos silvestres</p>
+                                      <p class="fw-bold">$10.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#platosCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#platosCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button>
+              </div>
+          </article>
+
+          <article id="Bebestibles" class="mb-5">
+              <h3 class="text-danger mb-4">Bebestibles</h3>
+              <div id="bebestiblesCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Jugos Naturales</h4>
+                                      <p>Naranja, piña, frutilla o mango - 500ml</p>
+                                      <p class="fw-bold">$2.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Bebidas</h4>
+                                      <p>Coca-Cola, Fanta, Sprite - 500ml</p>
+                                      <p class="fw-bold">$1.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Cervezas Artesanales</h4>
+                                      <p>Rubia, roja o negra - 330ml</p>
+                                      <p class="fw-bold">$3.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Vinos de la Casa</h4>
+                                      <p>Copas de vino tinto, blanco o rosado - 175ml</p>
+                                      <p class="fw-bold">$3.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Agua Mineral</h4>
+                                      <p>Con o sin gas - 500ml</p>
+                                      <p class="fw-bold">$1.500</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Bebidas Energéticas</h4>
+                                      <p>Variedad de marcas - 250ml</p>
+                                      <p class="fw-bold">$2.500</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#bebestiblesCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#bebestiblesCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button>
+              </div>
+          </article>
+
+          <article id="Postres" class="mb-5">
+              <h3 class="text-danger mb-4">Postres</h3>
+              <div id="postresCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Helado Artesanal</h4>
+                                      <p>Vainilla, chocolate, frutilla o lucuma - 2 bolas</p>
+                                      <p class="fw-bold">$3.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Tiramisú Clásico</h4>
+                                      <p>Capas de bizcocho, café, mascarpone y cacao</p>
+                                      <p class="fw-bold">$4.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Brownie con Helado</h4>
+                                      <p>Brownie caliente con helado de vainilla y salsa de chocolate</p>
+                                      <p class="fw-bold">$5.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Cheesecake de Frutilla</h4>
+                                      <p>Base de galleta, crema de queso y coulis de frutilla</p>
+                                      <p class="fw-bold">$4.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Volcán de Chocolate</h4>
+                                      <p>Bizcocho con corazón líquido de chocolate, acompañado de helado</p>
+                                      <p class="fw-bold">$5.990</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="menu-item">
+                                      <h4>Crepes Suzette</h4>
+                                      <p>Crepes flameados con salsa de naranja y Grand Marnier</p>
+                                      <p class="fw-bold">$6.990</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#postresCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#postresCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button>
+              </div>
+          </article>
+      </section>
+
+
+      <section id="Historia" class="my-5">
+        <h2 class="text-center mb-4">Nuestra Historia</h2>
+        <div class="text-center mb-4">
+            <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#historiaCollapse">
+                Ver Nuestra Historia Completa
+            </button>
         </div>
-      </div>
-    </nav>
-  
-
-
-  <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="imagenes/completo incompleto.jfif" class="d-block w-100 img-carousel" alt="imagen de hot dog">
+        
+        <div class="collapse" id="historiaCollapse">
+            <div class="history-container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="h-100">
+                            <h3 class="text-danger">Los Inicios (1975)</h3>
+                            <p>En el corazón de la ciudad, en el año 1975, nació un modesto local de sandwiches que prometía acabar con el hambre de sus clientes. Su fundador, Don Ramón "El Toro" Mendoza, decidió bautizar su negocio con un nombre que no dejara dudas: "El Aniquilador del Hambre".</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100">
+                            <h3 class="text-danger">El Destructor</h3>
+                            <p>La leyenda cuenta que Don Ramón creó su primer sandwich, "El Destructor", después de ver a un cliente desmayarse de hambre frente a su puesto. Era tan grande que necesitaba dos manos para sostenerlo y estaba relleno de carne, jamón, queso derretido, palta, tomate, huevo frito y una salsa secreta.</p>
+                            <div class="mt-3">
+                                <p class="mb-0 fst-italic">"No vendemos comida. Vendemos victorias."</p>
+                                <p class="fw-bold">— Don Ramón (1975)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div>
+                            <h3 class="text-danger">50 Años de Batallas Contra el Hambre</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="p-3 text-center">
+                                        <h4 class="text-danger">1975-1985</h4>
+                                        <p>Sobrevivió a tres crisis económicas gracias a su política de "Nadie se va con hambre"</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="p-3 text-center">
+                                        <h4 class="text-danger">1986</h4>
+                                        <p>Introdujo "El Apocalipsis", un sandwich de cinco pisos</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="p-3 text-center">
+                                        <h4 class="text-danger">1999</h4>
+                                        <p>Abrió su segunda sucursal</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="p-3 text-center">
+                                        <h4 class="text-danger">2020</h4>
+                                        <p>Repartió más de 1,000 cajas de comida diarias durante la pandemia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="imagenes/hamburguesa.jfif" class="d-block w-100 img-carousel" alt="imagen de hamburguesa">
-        </div>
-        <div class="carousel-item">
-            <img src="imagenes/mini pizza.jfif" class="d-block w-100 img-carousel" alt="imagen de mini pizza">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-
-  
-    </button>
-  </div>
-
-  <main>
-    <section id="menú">
-        <h2> Nuestro Menú</h2>
-
-        <article id="Sandwiches">
-          <h3>Sandwiches</h3>
-          <div>
-            <h4>Sandwich clasico</h4>
-            <p>ingredientes:</p>
-            <p>precio: $</p>
-          </div>
-          <div>
-            <h4>Sandwich italiano</h4>
-            <p>ingredientes:</p>
-            <p>precio: $</p>
-          </div>
-        </article>
-
-        <article id="Platos">
-          <h3>platos</h3>
-          <div>
-            <h4>Salmón</h4>
-            <p>ingredientes:</p>
-            <p>precio: $</p>
-          </div>
-          <div>
-            <h4>Bifé a lo pobre</h4>
-            <p>ingredientes:</p>
-            <p>precio: $</p>
-          </div>
-        </article>
-          
-        <article id="Bebestibles">
-          <h3>Bebestibles</h3>
-          <div>
-            <h4>Jugo Natural</h4>
-            <p>Sabores:</p>
-            <P>precio: $</P>
-          </div>
-          <div>
-            <h4>Bebidas</h4>
-            <p>Sabores:</p>
-            <p>Precio: $</p>
-          </div>
-        </article>
-
-        <article id="Postres">
-          <h3>Postres</h3>
-          <div>
-            <h4>Helado</h4>
-            <p>Sabores:</p>
-            <p>Precio: $</p>
-          </div>
-          <div>
-            <h4>tiramisú</h4>
-            <p>ingredientes:</p>
-            <p>precio: $</p>
-          </div>
-        </article>
     </section>
-
-    <section id="Historia">
-      <h2>Nuestra Historia</h2>
-      <p>En el corazón de la ciudad, en el año 1975, nació un modesto local de sandwiches que prometía acabar con el hambre de sus clientes de la manera más deliciosa posible. Su fundador, Don Ramón "El Toro" Mendoza, un cocinero autodidacta con manos gigantes y un apetito aún mayor, decidió bautizar su negocio con un nombre que no dejara dudas: "El Aniquilador del Hambre".
-
-        La leyenda cuenta que Don Ramón creó su primer sandwich, "El Destructor", después de ver a un cliente desmayarse de hambre frente a su puesto callejero. Era tan grande que necesitaba dos manos para sostenerlo y estaba relleno de carne, jamón, queso derretido, palta, tomate, huevo frito y una salsa secreta que, según rumores, contenía "el espíritu de los antepasados cocineros".
-        
-        Con los años, el local pasó de ser un pequeño puesto a convertirse en un ícono de la ciudad, conocido por sus porciones generosas, sus ingredientes frescos y su lema: "Si terminas tu plato, eres un héroe. Si no puedes, eres humano".
-        </p>
-      <p>50 Años de Batallas Contra el Hambre</p>
-        
-      <p>1975-1985: Sobrevivió a tres crisis económicas gracias a su política de "Nadie se va con hambre", donde ofrecía platos económicos a estudiantes y trabajadores.</p>  
-        
-      <p>1986: Introdujo "El Apocalipsis", un sandwich de cinco pisos que solo 12 personas han logrado terminar en una sola sentada.</p>   
-
-      <p>1999: Abrió su segunda sucursal después de que una turista japonesa viralizara su "Completo Aniquilador" en un blog de viajes.</p>   
-
-      <p>2020: Durante la pandemia, repartió más de 1,000 cajas de comida diarias a hospitales y familias necesitadas, reforzando su leyenda.</p>  
-        
-      <p>Hoy, dirigido por la nieta de Don Ramón, Valentina, el local mantiene su esencia: comida honesta, porciones épicas y un desafío constante contra el hambre. Sus paredes están llenas de fotos de clientes que intentaron (y fallaron) contra el "Reto Aniquilador", y su historia sigue escribiéndose... un bocado a la vez.</p>  
-        
-      <p>"No vendemos comida. Vendemos victorias." <br>— Don Ramón (1975).</p> 
 
       <article class="Testimonio">
         <h3>Testimonio de Clientes</h3>
@@ -244,16 +462,26 @@
     </section>
   </main>
   <a class="botn" href="#top" role="button">volver arriba</a>
-  <footer>
-    <h3>Contacto</h3>
-    <p>Sucursal centro:    +56 9 5555 5555</p>
-    <p>Sucursal Isla Teja: +56 9 2222 2222</p>
+  <footer class="bg-dark text-white py-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h3>Contacto</h3>
+          <p>Sucursal centro:    +56 9 5555 5555</p>
+          <p>Sucursal Isla Teja: +56 9 2222 2222</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h3>Redes Sociales</h3>
+        <p>Facebook: @aniquiladordelhambre</p>
+        <p>Instragram: @aniquiladordelhambre</p>
+      </div>
 
-    <h3>Redes Sociales</h3>
-    <p>Facebook: @aniquiladordelhambre</p>
-    <p>Instragram: @aniquiladordelhambre</p>
+      <div>
+        <p>&copy; 2025 El Aniquilador del Hambre - Todos los derechos reservados</p>
+      </div>    
+    </div>
 
-    <p>&copy; 2025 El Aniquilador del Hambre - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
